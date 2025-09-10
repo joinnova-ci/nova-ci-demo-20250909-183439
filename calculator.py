@@ -34,7 +34,7 @@ def modulo(a: Number, b: Number) -> Number:
 
 def absolute(x: Number) -> Number:
     """Get absolute value of a number."""
-    return abs(x)
+    return x if x >= 0 else -x
 
 def square_root(x: Number) -> float:
     """Get square root of a positive number."""
@@ -55,4 +55,4 @@ def factorial(n: int) -> int:
 
 def max_of_two(a: Number, b: Number) -> Number:
     """Return the larger of two numbers."""
-    return max(a, b)
+    return a if a >= b else b
